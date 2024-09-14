@@ -1,0 +1,15 @@
+# Example commands used
+
+# Yelp - BSL
+! bash MF_Frame_pos.sh 1e-4 1e-3 800 1024 0.11 1.10 0 multi yelp2018 drop
+! bash MF_Frame_pos.sh 1e-4 1e-3 400 1024 0.11 1.10 0 multi yelp2018 drop
+! bash MF_Frame_pos.sh 1e-4 1e-3 200 1024 0.11 1.10 0 multi yelp2018 drop
+! bash MF_Frame_pos.sh 1e-4 1e-3 100 1024 0.11 1.10 0 multi yelp2018 drop
+! bash MF_Frame_pos.sh 1e-4 1e-3 50 1024 0.11 1.10 0 multi yelp2018 drop
+! bash MF_Frame_pos.sh 1e-4 1e-3 10 1024 0.11 1.10 0 multi yelp2018 drop
+
+# Gowalla - BSL
+!bash MF_Frame_pos.sh 1e-4 1e-9 400 1024 0.08 1.22 0 multi gowalla drop
+!bash MF_Frame_pos.sh 1e-4 1e-9 200 1024 0.08 1.22 0 multi gowalla drop
+!bash MF_Frame_pos.sh 1e-4 1e-9 50 1024 0.08 1.22 0 multi gowalla drop
+

@@ -1,0 +1,49 @@
+Base:
+  debug_mode: false
+  eval_interval_epochs: 1
+  model_root: ./checkpoints/
+  num_workers: 3
+  patience: 3
+  save_best_only: true
+  verbose: 1
+MF_CCL_yelp18_m1:
+  batch_size: 512
+  dataset_id: yelp18_m1_0f43e4ba
+  embedding_dim: 64
+  embedding_dropout: 0.1
+  epochs: 100
+  fix_sampling_seeds: true
+  ignore_pos_items: false
+  learning_rate: 0.0001
+  loss: MultiCosineContrastiveLoss
+  margin: 0.9
+  margin_values_list:
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  metrics:
+  - Recall(k=20)
+  - Recall(k=50)
+  - NDCG(k=20)
+  - NDCG(k=50)
+  - HitRate(k=20)
+  - HitRate(k=50)
+  model: MF
+  monitor: Recall(k=20)
+  monitor_mode: max
+  neg_weight: 350
+  negative_weight: 150
+  negative_weights_list:
+  - 0.05
+  - 0.15
+  - 0.2
+  - 0.6
+  num_negs: 250
+  optimizer: adam
+  pos_weight: 1
+  regularizer: 1.0e-09
+  sampling_num_process: 1
+  seed: 2019
+  shuffle: true
+  similarity_score: cosine
