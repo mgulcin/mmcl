@@ -23,3 +23,6 @@
      `! pip install <any-path-like-ColabNotebooks>/simplex/RecBox-0.0.4mg`
      Check `mmcl/example_run_loss_functions_yelp.ipynb` as an example.
 * Note that only updated files/folders are shared
+
+## Exmple runs
+* Check `mmcl/example_run_loss_functions_yelp.ipynb` and `mmcl/example_run_loss_functions_gowalla.ipynb`
